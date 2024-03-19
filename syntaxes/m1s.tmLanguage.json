@@ -1,23 +1,23 @@
 {
   "comment": "based on asp textmate bundle by Rich Barton",
-  "fileTypes": ["asp","vbs","vb","vba","bas","frm","cls"],
-  "name": "VBScript",
+  "fileTypes": ["m1s"],
+  "name": "Mach3Script",
   "patterns": [    
     {
       "begin": "(^\\s+)?(?=\\')",
       "beginCaptures": {
         "1": {
-          "name": "punctuation.whitespace.comment.leading.vbs"
+          "name": "punctuation.whitespace.comment.leading.m1s"
         }
       },
       "end": "(?!\\G)",
       "patterns": [
         {
-          "name": "comment.line.apostrophe.vbs",
+          "name": "comment.line.apostrophe.m1s",
           "begin": "\\'",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.comment.vbs"
+              "name": "punctuation.definition.comment.m1s"
             }
           },
           "end": "\\n"
@@ -28,17 +28,17 @@
       "begin": "(^\\s+)?(?=REM )",
       "beginCaptures": {
         "1": {
-          "name": "punctuation.whitespace.comment.leading.vbs"
+          "name": "punctuation.whitespace.comment.leading.m1s"
         }
       },
       "end": "(?!\\G)",
       "patterns": [
         {
-          "name": "comment.line.rem.vbs",
+          "name": "comment.line.rem.m1s",
           "begin": "REM ",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.comment.vbs"
+              "name": "punctuation.definition.comment.m1s"
             }
           },
           "end": "\\n"
@@ -46,142 +46,142 @@
       ]
     },
     {
-      "name": "keyword.control.vbs",
+      "name": "keyword.control.m1s",
       "match": "(?i)\\b(On\\s+Error\\s+(Resume\\s+Next|GoTo)|If|Then|Else(If)?|While|Wend|For|To|Each|In|Step|Case|Select|Return|Continue|Do|Until|Loop|Next|With|Exit(\\s+(Do|For|Function|Sub|Property))?|End(\\s+(Select|If|Function|Sub))?|Option\\s+Explicit)\\b"
     },
     {
-      "name": "support.class.vbs",
+      "name": "support.class.m1s",
       "match": "(?i)\\b(Application|ObjectContext|Request|Response|Server|Session)\\b"
     },
     {
-      "name": "support.class.collection.vbs",
+      "name": "support.class.collection.m1s",
       "match": "(?i)\\b(Contents|StaticObjects|ClientCertificate|Cookies|Form|QueryString|ServerVariables)\\b"
     },
     {
-      "name": "meta.support.constant.vbs",
+      "name": "meta.support.constant.m1s",
       "match": "(?i)\\.\\b(TotalBytes|Buffer|CacheControl|Charset|ContentType|Expires|ExpiresAbsolute|IsClientConnected|PICS|Status|ScriptTimeout|CodePage|LCID|SessionID|Timeout)\\b",
       "captures": {
         "1": {
-          "name": "support.constant.vbs"
+          "name": "support.constant.m1s"
         }
       }
     },
     {
-      "name": "meta.support.function.vbs",
+      "name": "meta.support.function.m1s",
       "match": "(?i)\\.\\b(AddWindowsPrinterConnection|SetDefaultPrinter|LogMessage|Quit|RemoveNetworkDrive|MapNetworkDrive|Sleep|Open|Close|Send|SetRequestHeader|NotifyProgress|SetResult|GetDB|Echo|EnumValues|EnumKey|WriteLine|Execute|MoveFirst|MoveNext|Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\\b",
       "captures": {
         "1": {
-          "name": "support.function.vbs"
+          "name": "support.function.m1s"
         }
       }
     },
     {
-      "name": "support.function.event.vbs",
+      "name": "support.function.event.m1s",
       "match": "(?i)\\b(Application_OnEnd|Application_OnStart|OnTransactionAbort|OnTransactionCommit|Session_OnEnd|Session_OnStart|Class_Initialize|Class_Terminate)\\b"
     },
     {
-      "name": "support.function.vb.vbs",
+      "name": "support.function.vb.m1s",
       "match": "(?i)\\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year|Integer|Object|Variant|Long)\\b"
     },
     {
-      "name": "support.constant.vb.vbs",
+      "name": "support.constant.vb.m1s",
       "match": "(?i)\\b(vbtrue|vbfalse|vbcr|vbcrlf|vbformfeed|vblf|vbnewline|vbnullchar|vbnullstring|vbtab|vbverticaltab|vbbinarycompare|vbtextcomparevbsunday|vbmonday|vbtuesday|vbwednesday|vbthursday|vbfriday|vbsaturday|vbusesystemdayofweek|vbfirstjan1|vbfirstfourdays|vbfirstfullweek|vbgeneraldate|vblongdate|vbshortdate|vblongtime|vbshorttime|vbobjecterror|vbEmpty|vbNull|vbInteger|vbLong|vbSingle|vbDouble|vbCurrency|vbDate|vbString|vbObject|vbError|vbBoolean|vbVariant|vbDataObject|vbDecimal|vbByte|vbArray)\\b"
     },
     {
-      "name": "support.variable.vbs",
+      "name": "support.variable.m1s",
       "match": "(?i)\\b(Err|Wscript|Context)\\b"
     },
     {
-      "name": "constant.numeric.vbs",
+      "name": "constant.numeric.m1s",
       "match": "(?i)(&h[0-9]+|\\b(\\d+|\\.?\\d+(e[\\+|-]?\\d+)?(l|ul|u|f)?\\b))"
     },
     {
-      "name": "keyword.operator.vbs",
+      "name": "keyword.operator.m1s",
       "match": "(?i)[><\\+\\-\\*\\^&_=/]|\\b(Mod|And|Not|Or|Xor|Is)\\b"
     },
     {
-      "name": "storage.type.vbs",
+      "name": "storage.type.m1s",
       "match": "(?i)\\b(Call|Class|Const|Dim|Redim|Function|Sub|Property|Set|Let|Get|New|Randomize|As)\\b"
     },
     {
-      "name": "storage.modifier.vbs",
+      "name": "storage.modifier.m1s",
       "match": "(?i)\\b(Private|Public|Default|ByVal|ByRef)\\b"
     },
     {
-      "name": "constant.language.vbs",
+      "name": "constant.language.m1s",
       "match": "(?i)\\b(Empty|False|Nothing|Null|True)\\b"
     },
     {
-      "name": "string.quoted.double.vbs",
+      "name": "string.quoted.double.m1s",
       "begin": "\"",
       "end": "\"",
       "beginCaptures": {
         "0": {
-          "name": "punctuation.definition.string.begin.vbs"
+          "name": "punctuation.definition.string.begin.m1s"
         }
       },
       "endCaptures": {
         "0": {
-          "name": "punctuation.definition.string.end.vbs"
+          "name": "punctuation.definition.string.end.m1s"
         }
       },
       "patterns": [{
-        "name": "constant.character.escape.apostrophe.vbs",
+        "name": "constant.character.escape.apostrophe.m1s",
         "match": "\"\""
       }]
     },
     {
-      "name": "meta.function.call.vbs",
+      "name": "meta.function.call.m1s",
       "match": "(?i)\\b\\.?([_a-z]\\w*)\\s*\\(",
       "captures": {
         "1": {
-          "name": "entity.name.function.vbs"
+          "name": "entity.name.function.m1s"
         }
       }
     },
     {
-      "name": "meta.variable.other.vbs",
+      "name": "meta.variable.other.m1s",
       "match": "(?i)\\.([_a-z]\\w*)",
       "captures": {
         "1": {
-          "name": "support.variable.other.vbs"
+          "name": "support.variable.other.m1s"
         }
       }
     },
     {
-      "name": "meta.function.vbs",
+      "name": "meta.function.m1s",
       "match": "(?i)^\\s*(function|sub)\\s*([_a-z]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?",
       "captures": {
         "1": {
-          "name": "storage.type.function.vbs"
+          "name": "storage.type.function.m1s"
         },
         "2": {
-          "name": "entity.name.function.vbs"
+          "name": "entity.name.function.m1s"
         },
         "3": {
-          "name": "punctuation.definition.parameters.vbs"
+          "name": "punctuation.definition.parameters.m1s"
         },
         "4": {
-          "name": "variable.parameter.function.vbs"
+          "name": "variable.parameter.function.m1s"
         },
         "5": {
-          "name": "punctuation.definition.parameters.vbs"
+          "name": "punctuation.definition.parameters.m1s"
         }
       }
     },    
     {
-      "name": "variable.other.vbs",
+      "name": "variable.other.m1s",
       "match": "(?i)\\b([_a-z\\x7f-\\xff][\\w\\x7f-\\xff]*?)\\b",
       "captures": {
         "1": {
-          "name": "punctuation.definition.variable.vbs"
+          "name": "punctuation.definition.variable.m1s"
         }
       }
     },
     {
-      "name": "constant.caps.vbs",
+      "name": "constant.caps.m1s",
       "match": "(?-i)\\b[A-Z_]+\\b"
     }
   ],
-  "scopeName": "source.vbs"
+  "scopeName": "source.m1s"
 }
