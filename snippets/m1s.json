@@ -1,23 +1,4 @@
 {
-	"new class": {
-		"prefix": "Class",
-		"body": [
-			"Class ${1:$TM_FILENAME_BASE}$0",
-				"",
-				"\tPrivate Sub Class_Initialize",
-					"\t\t' Called automatically when class is created",
-				"\tEnd Sub",
-				"",
-				"\tPrivate Sub Class_Terminate",
-					"\t\t' Called automatically when all references to class instance are removed",
-				"\tEnd Sub",
-				"",
-				"",
-			"End Class"
-		],
-		"description": "New Class..."
-	},
-
 	"new dictionary": {
 		"prefix": "Dictionary",
 		"body": [
