@@ -1,19 +1,19 @@
 {
-    "name": "vbscript",
-    "displayName": "VBScript",
-    "description": "VBScript Language Support",
-    "version": "0.5.5",
-    "publisher": "karb0f0s",
+    "name": "Mach3Script",
+    "displayName": "Mach3Script",
+    "description": "Mach3 Script Language Support",
+    "version": "0.1.0",
+    "publisher": "CalDymos",
     "license": "MIT",
-    "icon": "resources/vbs.png",
+    "icon": "resources/m1s.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/karb0f0s/vscode-vbscript.git"
+        "url": "https://github.com/CalDymos/vscode-Mach3Script.git"
     },
     "bugs": {
-        "url": "https://github.com/karb0f0s/vscode-vbscript/issues"
+        "url": "https://github.com/CalDymos/vscode-Mach3Script/issues"
     },
-    "homepage": "https://github.com/karb0f0s/vscode-vbscript/blob/master/README.md",
+    "homepage": "https://github.com/CalDymos/vscode-Mach3Script/blob/master/README.md",
     "engines": {
         "vscode": "^1.14.0"
     },
@@ -22,43 +22,37 @@
         "Snippets"
     ],
     "keywords": [
-        "VBS",
-        "VBScript",
+        "M1S",
+        "Mach3",
+        "Cypress Enable",
+        "Script",
         "Language"
     ],
     "contributes": {
         "languages": [
             {
-                "id": "vbs",
+                "id": "m1s",
                 "aliases": [
-                    "VBScript",
-                    "vbs"
+                    "Mach3Script",
+                    "m1s"
                 ],
                 "extensions": [
-                    ".vbs",
-                    ".vba",
-                    ".bas",
-                    ".vbe",
-                    ".wsf",
-                    ".wsc",
-                    ".acm",
-                    ".acr",
-                    ".acf"
+                    ".m1s"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "vbs",
-                "scopeName": "source.vbs",
-                "path": "./syntaxes/vbs.tmLanguage.json"
+                "language": "m1s",
+                "scopeName": "source.m1s",
+                "path": "./syntaxes/m1s.tmLanguage.json"
             }
         ],
         "snippets": [
             {
-                "language": "vbs",
-                "path": "./snippets/vbs.json"
+                "language": "m1s",
+                "path": "./snippets/m1s.json"
             }
         ]
     }
