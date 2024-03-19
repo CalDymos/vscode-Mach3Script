@@ -1,5 +1,5 @@
 # Change Log
 
-## Version 0.5.0 (18/04/2018)
+## Version 0.1.0 (19/03/2024)
 
 - Initial release of the extension
