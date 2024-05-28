@@ -15,3 +15,6 @@ This package provide syntax highlighting, basic code snippets and auto indentati
 ## License
 
 Distributed under MIT license.
+
+**Archived, current Mach3 script support for Visual Studio Code at**
+https://github.com/CalDymos/M1S-VSCode
